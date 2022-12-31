@@ -63,8 +63,8 @@ testPredict = scaler.inverse_transform(testPredict)
 testY = scaler.inverse_transform([testY])
 
 # calculate 均方根誤差(root mean squared error)
-trainmae = mean_absolute_error((trainY[0], trainPredict[:,0]))
-testmae = mean_absolute_error((testY[0], testPredict[:,0]))
+trainmae = mean_absolute_error(trainY[0], trainPredict[:,0])
+testmae = mean_absolute_error(testY[0], testPredict[:,0])
 
 testScore = math.sqrt(mean_squared_error(testY[0], testPredict[:,0]))
 trainScore = math.sqrt(mean_squared_error(trainY[0], trainPredict[:,0]))
