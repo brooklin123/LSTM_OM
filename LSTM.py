@@ -64,6 +64,7 @@ testY = scaler.inverse_transform([testY])
 
 # calculate 均方根誤差(root mean squared error)
 trainmae = mean_absolute_error((trainY[0], trainPredict[:,0]))
+testmae = mean_absolute_error(mean_squared_error(trainY[0], trainPredict[:,0]))
 testmae = testScore = math.sqrt(mean_squared_error(testY[0], testPredict[:,0]))
 trainScore = math.sqrt(mean_squared_error(trainY[0], trainPredict[:,0]))
 print('Train Score: %.2f RMSE' % (trainScore))
