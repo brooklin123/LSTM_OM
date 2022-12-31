@@ -69,11 +69,9 @@ testmae = mean_absolute_error(testY[0], testPredict[:,0])
 testScore = math.sqrt(mean_squared_error(testY[0], testPredict[:,0]))
 trainScore = math.sqrt(mean_squared_error(trainY[0], trainPredict[:,0]))
 print('Train Score: %.2f RMSE' % (trainScore))
-testScore = math.sqrt(mean_squared_error(testY[0], testPredict[:,0]))
 print('Test Score: %.2f RMSE' % (testScore))
 
 print('Train Score: %.2f MAE' % (trainmae))
-testScore = math.sqrt(mean_squared_error(testY[0], testPredict[:,0]))
 print('Test Score: %.2f MAE' % (testmae))
 # 畫訓練資料趨勢圖
 # shift train predictions for plotting
